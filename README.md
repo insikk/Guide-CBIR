@@ -29,7 +29,7 @@ Good resource to follow great works doen previously.
 These are my remark on some papers. Please correct me, if there is any mistake.
 
 * Fine-tuning CNN Image Retrieval with No Human Annotation
-    * by ...
+    * by Filip Radenović, Giorgos Tolias, Ondřej Chum https://arxiv.org/abs/1711.02512
     * [Matlab Source]()
     * State-of-the-Art Image Retrieval Model on Oxford, Paris, and Holidays Dataset
     * Automatic Labeling for hard postivie/negative example using information from Structure from Motion
