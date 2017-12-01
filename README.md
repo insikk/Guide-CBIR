@@ -57,16 +57,16 @@ Many people shared their work to the community. Thanks for their efforts.
 # Not closely realated to CBIR, but may help to improve CBIR
 
 
-# Fine-grained Classification
+## Fine-grained Classification
 
-# 3D Modeling
+## 3D Modeling
 
 * Structure from Motion
 
-# Image Segmentation
+## Image Segmentation
 
 * Mask R-CNN
 
-# Image / Feature Pyramid
+## Image / Feature Pyramid
 
 * Feature Pyramidal Network
