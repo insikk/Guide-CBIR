@@ -47,6 +47,10 @@ There are other datasets, and they have their own characterestics.
 
 * The Stanford Mobile Visual Search Data Set (SMVS)
 
+* [Oxford buildings (Oxford5k, Oxford105k)](http://www.robots.ox.ac.uk/~vgg/data/oxbuildings/)
+   * 5k images 
+   * 100k images from Flicker + 5k images above. Used for large scale testing
+
 # Selected Projects
 
 Many people shared their work to the community. Thanks for their efforts. 
