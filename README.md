@@ -55,11 +55,13 @@ There are other datasets, and they have their own characterestics.
 
 Many people shared their work to the community. Thanks for their efforts. 
 
+## Feature Extraction
+
+* Hessian Affine + SIFT feature (quantized uint8, 128d). https://github.com/insikk/hesaff
 
 
 
 # Not closely realated to CBIR, but may help to improve CBIR
-
 
 ## Fine-grained Classification
 
