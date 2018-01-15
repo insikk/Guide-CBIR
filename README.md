@@ -59,6 +59,11 @@ Many people shared their work to the community. Thanks for their efforts.
 
 * Hessian Affine + SIFT feature (quantized uint8, 128d). https://github.com/insikk/hesaff
 
+## Geometric Verification
+
+* Fast Spatial Matching (10x faster than RANSAC when number of coresspondence are about 100)
+   * C++ Implementation: https://github.com/tsattler/geometric_burstiness
+   * Python biding: https://github.com/insikk/geometric_burstiness/tree/pybind
 
 
 # Not closely realated to CBIR, but may help to improve CBIR
