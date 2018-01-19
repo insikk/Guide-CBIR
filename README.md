@@ -57,6 +57,32 @@ There are other datasets, and they have their own characterestics.
    * No keypoint is provided. (at least not available now)
    * 7.8M descriptors in total
 
+# Visual Vocabularies
+
+* 2012 [Learning Vocabularies over a Fine Quantization](http://cmp.felk.cvut.cz/~perdom1/papers/mikulik_ijcv12.pdf) by Andrej Mikulik, Michal Perdoch, Ondrej Chum, Jirı Matas
+    * With larger training set (11B descriptors), large vocab size is acceptable
+    * 16M vocab size
+    * Larger the vocab size, the better performance. 
+        * larger than 16M has small gain. 
+        * larger than 64M vocab is not possible due to memory limitation
+    * Training Set: 6 million images were downloaded from FLICKR. Explicitly remove all images in testsets.
+    * Approximate Hierarchical k-menas
+        * two-level tree
+        * For 16M vocab tree, each level has 4K nodes on average
+        * Assignment step use approximate nearest neighbor algorithm with [FLANN](https://github.com/mariusmuja/flann)
+        * The whole procedure takes about one day on a cluster of 20 computers
+        * Refer Section 5. Large Vocabulary Generation for more details 
+
+* 2007 [Object retrieval with large vocabularies and fast spatial matching](http://ieeexplore.ieee.org/document/4270197/) by James Philbin, Ondrej Chum, Michael Isard, Josef Sivic, Andrew Zisserman
+    * 1M vocab size is the best for Oxford5k dataset (5k scale, 16.7M descriptors)
+    * Approximate k-means (AKM)
+        * forest of 8 randomized kd-tree
+    * Hierarchical k-means (HKM)
+        * [Scalable Recognition with a Vocabulary Tree](http://www-inst.eecs.berkeley.edu/~cs294-6/fa06/papers/nister_stewenius_cvpr2006.pdf)(UKBench dataset paper)'s vocabulary tree concept.
+        * 6 level, 10 cluster for each level       
+    * How long does it take to build? Not mentioned
+    * What software can we use to build? Not mentioned
+
 # Selected Projects
 
 Many people shared their work to the community. Thanks for their efforts. 
@@ -70,6 +96,10 @@ Many people shared their work to the community. Thanks for their efforts.
 * Fast Spatial Matching (10x faster than RANSAC when number of coresspondence are about 100)
    * C++ Implementation: https://github.com/tsattler/geometric_burstiness
    * Python biding: https://github.com/insikk/geometric_burstiness/tree/pybind
+   
+## Large Scale K-means clustering
+
+* Billion Scale. [PQk-means](https://github.com/DwangoMediaVillage/pqkmeans)
 
 
 # Not closely realated to CBIR, but may help to improve CBIR
