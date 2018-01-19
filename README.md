@@ -75,11 +75,11 @@ There are other datasets, and they have their own characterestics.
 
 * 2007 [Object retrieval with large vocabularies and fast spatial matching](http://ieeexplore.ieee.org/document/4270197/) by James Philbin, Ondrej Chum, Michael Isard, Josef Sivic, Andrew Zisserman
     * 1M vocab size is the best for Oxford5k dataset (5k scale, 16.7M descriptors)
-    * Approximate k-means (AKM)
+    * Approximate k-means (AKM)
         * forest of 8 randomized kd-tree
     * Hierarchical k-means (HKM)
-        * [Scalable Recognition with a Vocabulary Tree](http://www-inst.eecs.berkeley.edu/~cs294-6/fa06/papers/nister_stewenius_cvpr2006.pdf)(UKBench dataset paper)'s vocabulary tree concept.
-        * 6 level, 10 cluster for each level       
+        * [Scalable Recognition with a Vocabulary Tree](http://www-inst.eecs.berkeley.edu/~cs294-6/fa06/papers/nister_stewenius_cvpr2006.pdf)(UKBench dataset paper)'s vocabulary tree concept
+        * 6 level, 10 cluster for each level       
     * How long does it take to build? Not mentioned
     * What software can we use to build? Not mentioned
 
