@@ -50,6 +50,12 @@ There are other datasets, and they have their own characterestics.
 * [Oxford buildings (Oxford5k, Oxford105k)](http://www.robots.ox.ac.uk/~vgg/data/oxbuildings/)
    * 5k images 
    * 100k images from Flicker + 5k images above. Used for large scale testing
+   
+* UKBench (University of Kentucky dataset) [download from this archived site](https://archive.org/details/ukbench)
+   * 10200 images. 2550 clusters of size 4
+   * Provides DoG detector + 128d SIFT descriptor
+   * No keypoint is provided. (at least not available now)
+   * 7.8M descriptors in total
 
 # Selected Projects
 
