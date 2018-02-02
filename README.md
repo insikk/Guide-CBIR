@@ -72,6 +72,12 @@ There are other datasets, and they have their own characterestics.
         * Assignment step use approximate nearest neighbor algorithm with [FLANN](https://github.com/mariusmuja/flann)
         * The whole procedure takes about one day on a cluster of 20 computers
         * Refer Section 5. Large Vocabulary Generation for more details 
+    * Proposed PR similarity measure give better discriminitative power than using Hamming Embedding. *Comment: However, many CBIR still uses HE over PR similiary, why?*
+
+* 2008 [Hamming embedding and weak geometric consistency for large scale image search](https://hal.inria.fr/inria-00316866/document/) by Herve Jegou, Matthijs Douze, and Cordelia Schmid
+    * Visual words has quantization error. 
+    * This error result in bad matching.
+    * Hamming Embedding divdies each vornoi cell (each visual word) so mitigate quantization error.
 
 * 2007 [Object retrieval with large vocabularies and fast spatial matching](http://ieeexplore.ieee.org/document/4270197/) by James Philbin, Ondrej Chum, Michael Isard, Josef Sivic, Andrew Zisserman
     * 1M vocab size is the best for Oxford5k dataset (5k scale, 16.7M descriptors)
@@ -109,11 +115,14 @@ Many people shared their work to the community. Thanks for their efforts.
 ## 3D Modeling
 
 * Structure from Motion
+    * Opensource Software. Colmap: https://github.com/colmap/colmap
 
 ## Image Segmentation
 
 * Mask R-CNN
+    * Caffe2 Model. Detectron: https://github.com/facebookresearch/Detectron
 
 ## Image / Feature Pyramid
 
 * Feature Pyramidal Network
+    * Caffe2 Model. Detectron: https://github.com/facebookresearch/Detectron
